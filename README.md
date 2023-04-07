@@ -31,9 +31,7 @@ https://www.youtube.com/watch?v=EhKXCrV2eJw 4:18 0:18
 https://www.youtube.com/watch?v=EhKXCrV2eJw 4:44 0:09
 https://www.youtube.com/watch?v=EhKXCrV2eJw 5:50 0:21
 ```
-This will concatenate all these clips together into a single `mp4` file.
-
-**Note:** when using `mp4`, don't mix different video resolutions or it won't work.
+This will concatenate all these clips together into a single `mp4` file. You can also mix different video links. Note that if you plan to mix different links with the `mp4` tag, then their maximum resolutions need to be the same or it will create errors.
 
 Finally, open a command line and type:
 ```
