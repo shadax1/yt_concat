@@ -14,7 +14,7 @@ with open(f"{script_path}\links.txt", mode="rt", encoding="utf-8") as fp:
                 extension = "mp3"
             else:
                 lst_link = line.split()
-                response = check_output(f"youtube-dl -g {lst_link[0]}", shell=True)
+                response = check_output(f"yt-dlp -g {lst_link[0]}", shell=True)
                 output = response.decode("utf-8")
                 lst_output = output.split("\n")
                 if extension == "mp4":
