@@ -115,8 +115,11 @@ def get_full(extension, link, count):
 
 def empty_segments_folder():
     path = fr'{script_dir}{os.path.sep}segments'
-    for f in os.listdir(path):
-        os.remove(fr"{path}{os.path.sep}{f}")
+    if not os.path.exists(path):
+        os.makedirs(path)
+    else:
+        for f in os.listdir(path):
+            os.remove(fr"{path}{os.path.sep}{f}")
 
 empty_segments_folder()
 main()
